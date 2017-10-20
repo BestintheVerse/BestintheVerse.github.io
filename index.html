@@ -11,7 +11,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="fonts/technology-icons.css">
 		<link rel="icon" href="images/favicon.png">
+
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -55,14 +58,14 @@
 					<section id="wrapper">
 
 						<!-- Profile Overview -->
-							<section id="one" class="wrapper spotlight style1">
+							<section id="one" class="wrapper spotlight style4">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/profilepic_square.png" alt="" /></a>
-									<div class="content">
+									<div class="content" align="left">
 										<h2 class="major">About Me</h2>
-										<p>I was born in Akron, Ohio, but have lived most of my life in North Carolina. I graduated from NC State University in May of 2017 with degrees in Electrical and Computer Engineering. Some of my hobbies include 3D Printing, owning too many pairs of headphones, building PC's, toying with all sorts of electronics, reading and listening to audiobooks, and playing video games.</p>
+										<p>I graduated from NC State University in May of 2017 with degrees in Electrical and Computer Engineering. My professional passions and skills include product development, entrepreneurship, electronics, embedded systems, software dev. Some of my hobbies include 3D Printing, owning too many pairs of headphones, building PC's, toying with all sorts of electronics, reading and listening to audiobooks, and playing video games.</p>
 
 									</div>
+									<a class="image left"><img src="images/profilepic_square.png" alt="" /></a>
 								</div>
 
 							</section>
@@ -79,30 +82,83 @@
 											 <ul class="alt">
 												 <li><h4>Full Name:</h4><p>Zachary Paul Hannum</p></li>
 												 <li><h4>Birth Date:</h4><p>9.10.1995</p></li>
-												 <li><h4>Job:</h4><p>Founder, Best in the Verse Cables<br>Co-Founder, Kast Clothing</p></li>
+												 
 											 </ul>
 										 </div>
 										 <div class="6u$ 12u$(medium)">
-											 <h4>Skills</h4>
-											 <ul class="alt">
-												 <li><em>Languages and Software:</em>  C, Java, HTML, CSS, XML, LaTeX, Android Studio, Eclipse, Matlab,
-                                                 Github, Arduino IDE, SQLite, IAR Embedded Workbench, Keil uVision5, Kicad/Eagle, Fusion360</li>
-												 <li><em>Technical Skills:</em>  PCB soldering, breadboard circuit design, building PC’s, building and operating
-                                                 FDM and SLA 3D Printers</li>
-											 </ul>
-											 <h4>Icons</h4>
+											<ul class="alt">
+											 <li><h4>Job:</h4><p>Founder, Best in the Verse Cables<br>Co-Founder, Kast Clothing</p></li>
+											 <h4>Social</h4>
+											</ul>
 											 <ul class="icons">
 												 <li><a href="https://www.instagram.com/zhannum/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 												 <li><a href="https://github.com/BestintheVerse" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
 												 <li><a href="https://www.linkedin.com/in/zhannum" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 											 </ul>
+											 
 										 </div>
 									 </div>
-									 <ul class="actions">
+									 
+									 <h2 class="major">Skills</h2>
+									 <div class="row">
+									 	<div class="3u 6u$(medium)">
+									 		<h4>Languages</h4>
+									 		<ul class="short">
+									 			<li>C</li>
+									 			<li>Java</li>
+									 			<li>HTML</li>
+									 			<li>CSS</li>
+									 			<li>XML</li>
+									 			<li>LaTeX</li>
+									 			<li>SQLite</li>
+
+									 	</div>
+									 	<div class="3u 6u$(medium)">
+									 		<h4>Technical</h4>
+									 		<ul class="short">
+									 			<li>PCB Design</li>
+									 			<li>Circuit Design</li>
+									 			<li>Soldering</li>
+									 			<li>3D Printing (FDM & SLA)</li>
+									 			<li>3D Modeling</li>
+									 			<li>Building PC's</li>
+									 			
+
+									 	</div>
+									 	<div class="3u 6u$(medium)">
+									 		<h4>Tools</h4>
+									 		<ul class="short">
+									 			<li>Android Studio</li>
+									 			<li>Eclipse</li>
+									 			<li>Matlab</li>
+									 			<li>Github</li>
+									 			<li>Arduino IDE</li>
+									 			<li>IAR Embedded Workbench</li>
+									 			<li>Keil uVision5</li>
+									 			<li>Meshmixer</li>
+									 			<li>Fusion360</li>
+
+									 	</div>
+									 	<div class="3u 6u$(medium)">
+									 		<h4>Design</h4>
+									 		<ul class="short">
+									 			<li>Photoshop</li>
+									 			<li>Premiere Pro</li>
+									 			<li>After Effects</li>
+									 			<li>Illustrator</li>
+									 			<li>Material Design</li>
+
+									 	</div>
+
+									 	<ul class="actions">
 										 <li><a href="resume/hannum_zach_resume.pdf" target="_blank" class="button special icon fa-download">Download Resume</a></li>
 									 </ul>
+
+									 </div>
+
 								 </div>
 							 </section>
+
 
 							 <!-- Three -->
 							 <section id="three" class="wrapper">
@@ -136,40 +192,43 @@
 									 <p>This section contains a few of my personal projects, as well as some of my hobbies.</p>
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/ciems_square.jpg" alt="" /></a>
+											<a  class="image"><img src="images/ciems_square.jpg" alt="" /></a>
 											<h3 class="major">3D Printed Custom In-Ear Monitors</h3>
 											<p>In the Fall of 2017, I acquired a Formlabs Form 1+ SLA printer to start offering CIEMs through Best in the Verse Audio. I built a 3D scanner utilizing photogrammetry technology to scan ear impressions. I then design the shells in 3d modeling software and print the shells on the Form 1+. I use Knowles GV quad balanced armature drivers. The shells are finished with a hypoallergenic lacquer. </p>
-											<p class="button small">Arduino</p>
-											<p class="button small">C++</p>
-											<p class="button small">Autodesk Meshmixer</p>
-											<p class="button small">Autodesk Remake</p>
+											<p><span class="label label-default">Arduino</span>
+											<span class="label label-default">C++</span>
+											<span class="label label-default">Circuit Design</span>
+											<span class="label label-default">3D Printing</span>
+											<span class="label label-default">Autodesk Meshmixer</span>
+											<span class="label label-default">Autodesk Remake</span></p>
+
 											<a href="#" target="_blank" class="special">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/audibooks/audibooks_main_pic.png" alt="" /></a>
+											<a  class="image"><img src="images/audibooks/audibooks_main_pic.png" alt="" /></a>
 											<h3 class="major">Audibooks</h3>
 											<p>Audibooks is my first Android app, built in Android Studio using Java and a smidge of SQLite. Building the app has given me a good understanding of implementing media services, custom ArrayLists, SQLite Databases, user prefs, Material Design, JSON Queries, crash reporting and testing, and using GitHub.</p>
-											<p class="button small">Java</p>
-											<p class="button small">Android Studio</p>
-											<p class="button small">Material Design</p>
-											<p class="button small">SQLite</p>
-
-
+											<p><span class="label label-default">Java</span>
+											<span class="label label-default">Android Studio</span>
+											<span class="label label-default">Material Design</span>
+											<span class="label label-default">SQLite</span></p>
+											
 											<a href="https://github.com/BestintheVerse/audibooks" target="_blank" class="special">GitHub</a>
 										</article>
 										<article>
-										<a href="#" class="image"><img src="images/306/car.jpg" alt="" /></a>
+										<a  class="image"><img src="images/306/car.jpg" alt="" /></a>
 											
 											<h3 class="major">Autonomous Remote Control Car</h3>
 											<p>As a part of my NC State class ECE 306 (Intro to Embedded Systems), I built a remote control line-following car. The car uses a Ti MSP430 micro-controller at its heart, with a secondary control board built to control the power, motors, LCD screen, and IoT functionality. The code for the car was written in C. I also wrote a simple Android application to send remote control commands to the car.</p>
-											<p class="button small">C</p>
-											<p class="button small">Java</p>
-											<p class="button small">3D Printing</p>
-											<p class="button small">IAR Embedded Workbench</p>
+											<p><span class="label label-default">C</span>
+											<span class="label label-default">Java</span>
+											<span class="label label-default">Autodesk Fusion360</span>
+											<span class="label label-default">3D Printing</span>
+											<span class="label label-default">IAR Embedded Workbench</span></p>
 											<a href="https://github.com/BestintheVerse/ECE306" target="_blank" class="special">GitHub</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pc/pc.jpg" alt="" /></a>
+											<a  class="image"><img src="images/pc/pc.jpg" alt="" /></a>
 											<h3 class="major">PC Building</h3>
 											<p>In my spare time, I enjoy building desktop computers for gaming, productivity, and a variety of other uses. My current computer is an i5 @ 4.5 GHz, 2X GTX 970 SLI, 16GB RAM. My PC was featured on <a href="https://www.instagram.com/p/4CMy26wQN-/" target="_blank" >Intel's Instagram.</a></p>
 											<!--<a href="#" target="_blank" class="special">Learn more</a>-->
