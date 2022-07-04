@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Portrait, Typography } from "../atoms";
+import { Portrait, Typography, Button } from "../atoms";
 
 const StyledHero = styled.div`
   display: flex;
@@ -21,24 +21,37 @@ const StyledHeroContainer = styled.div`
 
 const Hero = () => {
   return (
-    <StyledHero>
+    <>
+      <StyledHero>
+        <StyledHeroContainer>
+          <Typography variant="h1" align="center">
+            Hi, I'm <strong>Zach</strong>
+          </Typography>
+        </StyledHeroContainer>
+        <StyledHeroContainer>
+          <Portrait />
+        </StyledHeroContainer>
+        <StyledHeroContainer>
+          <Typography variant="h2">
+            <strong>
+              Passionate about full-stack software development, embedded
+              systems, and design.
+            </strong>
+          </Typography>
+        </StyledHeroContainer>
+      </StyledHero>
       <StyledHeroContainer>
-        <Typography variant="h1">
-          Hi, I'm <strong>Zach</strong>
+        <Typography variant="h4" color="fgSecondary" align="center">
+          Software&nbsp;Engineer&nbsp;at&nbsp;
+        </Typography>
+        <Typography variant="h4" color="primary">
+          <strong>Garmin</strong>
         </Typography>
       </StyledHeroContainer>
       <StyledHeroContainer>
-        <Portrait />
+        <Button>Resume</Button>
       </StyledHeroContainer>
-      <StyledHeroContainer>
-        <Typography variant="h2">
-          <strong>
-            Passionate about full-stack software development, embedded systems,
-            and design.
-          </strong>
-        </Typography>
-      </StyledHeroContainer>
-    </StyledHero>
+    </>
   );
 };
 

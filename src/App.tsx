@@ -20,6 +20,7 @@ const StyledApp = styled.div`
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  justify-content: center;
 `;
 
 function App() {

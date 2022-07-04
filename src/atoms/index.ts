@@ -3,3 +3,4 @@ export { default as Logo } from "./Logo";
 export { default as MenuItemIcon } from "./MenuItemIcon";
 export { default as Portrait } from "./Portrait";
 export { default as Typography } from "./Typography";
+export { Button, ButtonLink } from "./Button";
