@@ -2,7 +2,7 @@ import Color from "color";
 import styled, { ThemeProvider } from "styled-components";
 import { Helmet } from "react-helmet";
 import { theme } from "./theme";
-import { Header, Hero } from "./organisms";
+import { Header, Hero, CareerSection } from "./organisms";
 
 const StyledApp = styled.div`
   background-color: ${(p) => p.theme.bg};
@@ -34,13 +34,14 @@ function App() {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=block"
           rel="stylesheet"
         />
       </Helmet>
       <StyledApp>
         <Header />
         <Hero />
+        <CareerSection />
       </StyledApp>
     </ThemeProvider>
   );

@@ -8,7 +8,8 @@ const StyledHeader = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5vw;
+  height: 20vh;
+  padding: 0px 5vw;
   align-items: center;
 `;
 

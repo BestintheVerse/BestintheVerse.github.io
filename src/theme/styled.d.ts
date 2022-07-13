@@ -9,5 +9,7 @@ declare module 'styled-components' {
     fgSecondary: string;
     border: string;
     primary: string;
+    primaryBlend: string;
+    primaryShadow: string;
   }
 }

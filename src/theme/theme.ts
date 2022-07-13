@@ -6,6 +6,8 @@ const theme: DefaultTheme = {
   fgSecondary: "#939393",
   border: "#474747",
   primary: "#544CE8",
+  primaryBlend: "#482A9F",
+  primaryShadow: "#3D318B",
 };
 
 export default theme;

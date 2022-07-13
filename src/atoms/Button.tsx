@@ -3,6 +3,23 @@ import styled, { css } from "styled-components";
 
 const ButtonStyles = css`
   all: unset;
+  cursor: pointer;
+  background-color: ${(p) => p.theme.primary};
+  background-size: 200% 300%;
+  background-image: ${(p) =>
+    `radial-gradient(circle, ${p.theme.primaryBlend}, ${p.theme.primary})`};
+  height: 30px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  gap: 10px;
+  box-shadow: 0px 2px 10px ${(p => p.theme.primaryShadow)};
+  &:hover {
+    opacity: 0.8;
+  }
+  transition: opacity 150ms ease-out;
 `;
 
 const StyledButtonLink = styled.a`

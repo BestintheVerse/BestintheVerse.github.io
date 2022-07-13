@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-type TypographyVariant = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span";
+type TypographyVariant = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span" | "p";
 type Color = "fg" | "fgSecondary" | "primary";
 type Align = "center" | "left" | "right" | "justify";
 
@@ -29,9 +29,10 @@ const StyledTopography = styled.span<StyledTypographyProps>`
 
 const StyledH1 = styled(StyledTopography)`
   font-size: 4em;
+  padding: 20px;
 `;
 const StyledH2 = styled(StyledTopography)`
-  font-size: 2em;
+  font-size: 3em;
 `;
 const StyledH3 = styled(StyledTopography)`
   font-size: 1.8em;
@@ -46,6 +47,10 @@ const StyledH6 = styled(StyledTopography)`
   font-size: 1.2em;
 `;
 const StyledSpan = styled(StyledTopography)``;
+const StyledP = styled(StyledTopography)`
+  display: block;
+  padding: 10px 0px;
+`;
 
 const Typography = ({
   variant,
@@ -100,6 +105,12 @@ const Typography = ({
           <StyledSpan variant={variant} color={color}>
             {children}
           </StyledSpan>
+        );
+      case "p":
+        return (
+          <StyledP variant={variant} color={color}>
+            {children}
+          </StyledP>
         );
     }
   };
