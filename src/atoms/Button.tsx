@@ -14,6 +14,7 @@ const ButtonStyles = css`
   justify-content: center;
   align-items: center;
   border-radius: 12px;
+  white-space: nowrap;
   gap: 10px;
   box-shadow: 0px 2px 10px ${(p => p.theme.primaryShadow)};
   &:hover {

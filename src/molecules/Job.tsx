@@ -3,8 +3,6 @@ import { Typography } from "../atoms";
 
 const StyledJob = styled.div`
   padding: 25px 0px;
-  width: 75%;
-  margin: 0px auto;
 `;
 
 const StyledJobIcon = styled.img`

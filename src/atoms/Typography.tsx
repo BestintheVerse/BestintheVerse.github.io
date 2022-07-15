@@ -30,25 +30,35 @@ const StyledTopography = styled.span<StyledTypographyProps>`
 const StyledH1 = styled(StyledTopography)`
   font-size: 4em;
   padding: 20px;
+  display: block;
 `;
 const StyledH2 = styled(StyledTopography)`
   font-size: 3em;
+  padding: 20px;
+  display: block;
 `;
 const StyledH3 = styled(StyledTopography)`
   font-size: 1.8em;
+  display: block;
 `;
 const StyledH4 = styled(StyledTopography)`
   font-size: 1.5em;
+  display: block;
 `;
 const StyledH5 = styled(StyledTopography)`
   font-size: 1.3em;
+  display: block;
 `;
 const StyledH6 = styled(StyledTopography)`
   font-size: 1.2em;
+  display: block;
 `;
-const StyledSpan = styled(StyledTopography)``;
+const StyledSpan = styled(StyledTopography)`
+  font-size: 0.8em;
+`;
 const StyledP = styled(StyledTopography)`
   display: block;
+  font-size: 0.9em;
   padding: 10px 0px;
 `;
 

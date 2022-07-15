@@ -7,6 +7,7 @@ import { Download } from "@styled-icons/bootstrap/Download";
 
 const PageContainer = styled.div`
 min-height: 80vh;
+margin-top: 20vh;
 display: flex;
 justify-content: space-between;
 flex-direction: column;

@@ -2,7 +2,13 @@ import Color from "color";
 import styled, { ThemeProvider } from "styled-components";
 import { Helmet } from "react-helmet";
 import { theme } from "./theme";
-import { Header, Hero, CareerSection } from "./organisms";
+import {
+  Header,
+  Hero,
+  CareerSection,
+  AboutSection,
+  ProjectSection,
+} from "./organisms";
 
 const StyledApp = styled.div`
   background-color: ${(p) => p.theme.bg};
@@ -41,7 +47,9 @@ function App() {
       <StyledApp>
         <Header />
         <Hero />
+        <AboutSection />
         <CareerSection />
+        <ProjectSection />
       </StyledApp>
     </ThemeProvider>
   );
