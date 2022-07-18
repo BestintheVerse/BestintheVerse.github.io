@@ -83,22 +83,21 @@ const CareerSection = () => {
         </Typography>
         <ButtonsList>
           <ButtonLink
+            name="NC Technician Article"
+            icon={<LinkIcon />}
             href="http://www.technicianonline.com/arts_entertainment/article_afa41236-2578-11e7-b9eb-ef95e2f5fcde.html"
-            target="_blank"
-          >
-            <LinkIcon />
-            <Typography variant="span">NC Technician Article</Typography>
-          </ButtonLink>
+          ></ButtonLink>
           <ButtonLink
+            name="Poole College Article"
+            icon={<LinkIcon />}
             href="https://poole.ncsu.edu/news/2017/09/06/nc-state-student-entrepreneurs-gain-a-lot-from-andrews-launch-accelerator-experience/"
-            target="_blank"
+          ></ButtonLink>
+          <ButtonLink
+            name="eGames Winning Video"
+            icon={<LinkIcon />}
+            href="https://vimeo.com/210322534"
           >
             <LinkIcon />
-            <Typography variant="span">Poole College Article</Typography>
-          </ButtonLink>
-          <ButtonLink href="https://vimeo.com/210322534" target="_blank">
-            <LinkIcon />
-            <Typography variant="span">eGames Winning Video</Typography>
           </ButtonLink>
         </ButtonsList>
       </Job>

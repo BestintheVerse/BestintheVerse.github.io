@@ -6,3 +6,4 @@ export { default as Typography } from "./Typography";
 export { Button, ButtonLink } from "./Button";
 export { default as Image } from "./Image";
 export { default as Badge } from "./Badge";
+export { default as Link } from "./Link";

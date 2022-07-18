@@ -6,11 +6,11 @@ import { useMediaQuery } from "../hooks";
 import { Download } from "@styled-icons/bootstrap/Download";
 
 const PageContainer = styled.div`
-min-height: 80vh;
-margin-top: 20vh;
-display: flex;
-justify-content: space-between;
-flex-direction: column;
+  min-height: 80vh;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 `;
 
 const StyledHero = styled.div`
@@ -110,10 +110,7 @@ const Hero = () => {
         </Typography>
       </StyledHeroContainer>
       <StyledHeroContainer>
-        <ButtonLink href={resume} target="_blank">
-          <DownloadIcon />
-          <Typography variant="span">Resume</Typography>
-        </ButtonLink>
+        <ButtonLink name="Resume" icon={<DownloadIcon />} href={resume} />
       </StyledHeroContainer>
     </PageContainer>
   );

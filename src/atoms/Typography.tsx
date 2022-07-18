@@ -54,7 +54,7 @@ const StyledH6 = styled(StyledTopography)`
   display: block;
 `;
 const StyledSpan = styled(StyledTopography)`
-  font-size: 0.8em;
+  font-size: 0.9em;
 `;
 const StyledP = styled(StyledTopography)`
   display: block;

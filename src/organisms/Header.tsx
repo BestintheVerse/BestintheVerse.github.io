@@ -7,6 +7,7 @@ import { Linkedin } from "@styled-icons/bootstrap/Linkedin";
 import { useMediaQuery, useScrollAt } from "../hooks";
 
 const StyledHeader = styled.div`
+  z-index: 5;
   height: 150px;
   width: 100vw;
   display: flex;
