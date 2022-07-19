@@ -9,9 +9,11 @@ const useMediaQuery = (query: string): boolean => {
   };
 
   useEffect(() => {
-    window.matchMedia(query).addEventListener("change", handler);
+    const matchQuery = window.matchMedia(query);
+    setMatch(matchQuery.matches);
+    matchQuery.addEventListener("change", handler);
     return () => {
-      window.matchMedia(query).removeEventListener("change", handler);
+      matchQuery.removeEventListener("change", handler);
     };
   }, [query]);
 
