@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0d8e94f8.css",
+    "main.js": "/static/js/main.7d18d406.js",
+    "static/js/787.d907f0fb.chunk.js": "/static/js/787.d907f0fb.chunk.js",
+    "static/media/hannum-ever-after.png": "/static/media/hannum-ever-after.7556c0e6dd4f9e91ebdf.png",
+    "static/media/audibooks_1.mp4": "/static/media/audibooks_1.375c66c4c17382f2f7e9.mp4",
+    "static/media/the-dark-between.png": "/static/media/the-dark-between.6feedaae39d85952d284.png",
+    "static/media/audibooks_2.mp4": "/static/media/audibooks_2.2bd2e8eb4962aef04b0a.mp4",
+    "static/media/calamus-project.png": "/static/media/calamus-project.5277f40c8aee5c6f72ce.png",
+    "static/media/zach_hannum_resume.pdf": "/static/media/zach_hannum_resume.fcd79ce0622b60993594.pdf",
+    "static/media/portrait.jpeg": "/static/media/portrait.4a69d266b9063bd24a2d.jpeg",
+    "static/media/logo.png": "/static/media/logo.ac3171c78f5e2b5b5e30.png",
+    "index.html": "/index.html",
+    "main.0d8e94f8.css.map": "/static/css/main.0d8e94f8.css.map",
+    "main.7d18d406.js.map": "/static/js/main.7d18d406.js.map",
+    "787.d907f0fb.chunk.js.map": "/static/js/787.d907f0fb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d8e94f8.css",
+    "static/js/main.7d18d406.js"
+  ]
+}
