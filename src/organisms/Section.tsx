@@ -14,14 +14,19 @@ const StyledSectionContent = styled.div`
   margin: 0px auto;
 `;
 
-type SectionProps = {
-  title: string;
-  children: React.ReactNode;
+export type PublicSectionProps = {
+  innerRef: React.RefObject<HTMLDivElement>;
 };
 
-const Section = ({ title, children }: SectionProps) => {
+export type SectionProps = {
+  title: string;
+  children: React.ReactNode;
+} & PublicSectionProps &
+  React.ComponentPropsWithRef<"div">;
+
+const Section = ({ title, children, innerRef, ...props }: SectionProps) => {
   return (
-    <StyledSection>
+    <StyledSection {...props} ref={innerRef}>
       <Typography variant="h2">
         <strong>{title}</strong>
       </Typography>

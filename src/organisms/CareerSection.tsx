@@ -7,6 +7,7 @@ import garmin from "../assets/garmin-logo.png";
 import plexus from "../assets/plexus-logo.png";
 import kast from "../assets/kast-logo.png";
 import bitv from "../assets/bitv-logo.png";
+import type { PublicSectionProps } from "./Section";
 
 const ButtonsList = styled.div`
   padding-top: 10px;
@@ -20,16 +21,25 @@ const LinkIcon = styled(ExternalLinkOutline)`
   color: ${(p) => p.theme.fg};
 `;
 
-const CareerSection = () => {
+const CareerSection = (props: PublicSectionProps) => {
   return (
-    <Section title="Career">
+    <Section title="Career" {...props}>
       <Job
         icon={garmin}
         title="Software Engineer II"
         company="Garmin"
         dates="2021 - Present"
       >
-        <Typography variant="p">Add Description Here.</Typography>
+        <Typography variant="p">
+          At Garmin, I work as a high-level software engineer developing the
+          latest and greatest fitness products for tens of thousands of global
+          consumers. My work is primarily on mid-level and frontend
+          functionality written in C and C++—LTE subscription management,
+          location and activity tracking, and graph visualizations. I
+          collaborate closely with developers, UI/UX designers, internal and
+          external testers, and project managers to create production-ready code
+          that runs on thousands of devices.
+        </Typography>
       </Job>
       <Job
         icon={plexus}

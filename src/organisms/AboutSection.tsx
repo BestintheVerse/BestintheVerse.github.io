@@ -1,20 +1,24 @@
+import React from "react";
 import { Typography } from "../atoms";
 import { Section } from "../organisms";
+import type { PublicSectionProps } from "./Section";
 
-
-const AboutSection = () => {
+const AboutSection = (props: PublicSectionProps) => {
   return (
-    <Section title="About Me">
+    <Section title="About Me" {...props}>
       <Typography variant="p">
-        I graduated from <strong>NC State University in May of 2017 with degrees in
-        Computer and Electrical Engineering</strong>. Throughout my college career, I
-        founded and co-founded two companies, Best in the Verse Audio, and Kast
-        Clothing. My experience as an entrepreneur has given me skills in
-        product development, creating things like custom jeans, 3D printed
-        earphones, and audiophile headphone cables. After graduating, I received
-        funding through NC State as an Entrepreneurship Initiative Fellow,
-        allowing me to pursue my startups and participate in the Andrew's Launch
-        Accelerator program.
+        I graduated from{" "}
+        <strong>
+          NC State University in May of 2017 with degrees in Computer and
+          Electrical Engineering
+        </strong>
+        . Throughout my college career, I founded and co-founded two companies,
+        Best in the Verse Audio, and Kast Clothing. My experience as an
+        entrepreneur has given me skills in product development, creating things
+        like custom jeans, 3D printed earphones, and audiophile headphone
+        cables. After graduating, I received funding through NC State as an
+        Entrepreneurship Initiative Fellow, allowing me to pursue my startups
+        and participate in the Andrew's Launch Accelerator program.
       </Typography>
       <Typography variant="p">
         My career as a professional software engineer has run the full gamut of
@@ -31,7 +35,6 @@ const AboutSection = () => {
         about all things related to 3D printing, 3D modeling, and virtual
         reality.
       </Typography>
-
     </Section>
   );
 };

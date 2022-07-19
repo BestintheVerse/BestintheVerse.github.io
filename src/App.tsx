@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Color from "color";
 import styled, { ThemeProvider } from "styled-components";
 import { Helmet } from "react-helmet";
@@ -30,6 +31,10 @@ const StyledApp = styled.div`
 `;
 
 function App() {
+  const aboutRef = useRef(null);
+  const careerRef = useRef(null);
+  const projectRef = useRef(null);
+
   return (
     <ThemeProvider theme={theme}>
       <Helmet>
@@ -45,11 +50,17 @@ function App() {
         />
       </Helmet>
       <StyledApp>
-        <Header />
+        <Header
+          navList={[
+            { name: "About", navRef: aboutRef },
+            { name: "Career", navRef: careerRef },
+            { name: "Projects", navRef: projectRef },
+          ]}
+        />
         <Hero />
-        <AboutSection />
-        <CareerSection />
-        <ProjectSection />
+        <AboutSection innerRef={aboutRef} />
+        <CareerSection innerRef={careerRef} />
+        <ProjectSection innerRef={projectRef} />
       </StyledApp>
     </ThemeProvider>
   );

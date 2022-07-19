@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { Typescript } from "@styled-icons/simple-icons/Typescript";
 import { Javascript } from "@styled-icons/simple-icons/Javascript";
 import { ReactLogo } from "@styled-icons/boxicons-logos/ReactLogo";
@@ -22,24 +21,15 @@ import audibooks1 from "../assets/audibooks_1.mp4";
 // @ts-ignore
 import audibooks2 from "../assets/audibooks_2.mp4";
 import Video from "../atoms/Video";
+import type { PublicSectionProps } from "./Section";
 
 const badgeProps = {
   size: "15px",
 };
 
-const DemoContainer = styled.div`
-  background-color: black;
-  border-radius: 10px;
-  padding: 40px;
-  max-height: 400px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-`;
-
-const ProjectSection = () => {
+const ProjectSection = (props: PublicSectionProps) => {
   return (
-    <Section title="Projects">
+    <Section title="Projects" {...props}>
       <Project
         title="Calamus"
         githubLink="https://github.com/midnightprioriem/calamus"

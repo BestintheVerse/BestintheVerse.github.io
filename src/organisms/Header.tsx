@@ -51,7 +51,16 @@ const StyledHeaderBackground = styled.div<StyledHeaderBackgroundProps>`
   }
 `;
 
-const Header = () => {
+type NavEntry = {
+  name: string;
+  navRef: React.RefObject<HTMLDivElement>;
+};
+
+type HeaderProps = {
+  navList: NavEntry[];
+};
+
+const Header = ({ navList }: HeaderProps) => {
   const useHasSCrolled = useScrollAt(0);
   const hideMenuList = useMediaQuery("(max-width: 800px)");
 
@@ -61,10 +70,13 @@ const Header = () => {
         <Logo />
         {!hideMenuList && (
           <MenuItemList gap={10}>
-            <MenuItem>About</MenuItem>
-            <MenuItem>Career</MenuItem>
-            <MenuItem>Projects</MenuItem>
-            <MenuItem>Contact</MenuItem>
+            {navList.map((nav, index) => {
+              return (
+                <MenuItem key={index} navRef={nav.navRef}>
+                  {nav.name}
+                </MenuItem>
+              );
+            })}
           </MenuItemList>
         )}
         <MenuItemList gap={25}>

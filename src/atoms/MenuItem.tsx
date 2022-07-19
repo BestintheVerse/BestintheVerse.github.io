@@ -15,11 +15,27 @@ const StyledMenuItem = styled.button`
   font-weight: 700;
 `;
 
-const MenuItem = ({
-  children,
-  ...props
-}: React.ComponentPropsWithRef<"button">) => {
-  return <StyledMenuItem {...props}>{children}</StyledMenuItem>;
+type MenuItemProps = {
+  navRef: React.RefObject<HTMLDivElement>;
+} & React.ComponentPropsWithRef<"button">;
+
+const MenuItem = ({ navRef, children, ...props }: MenuItemProps) => {
+  const handleClick = () => {
+    const nav = navRef.current;
+    if (nav) {
+      console.log(`${nav.getBoundingClientRect().y - 150}`);
+      window.scrollTo({
+        behavior: "smooth",
+        top: nav.getBoundingClientRect().y + window.pageYOffset - 150,
+      });
+    }
+  };
+
+  return (
+    <StyledMenuItem {...props} onClick={handleClick}>
+      {children}
+    </StyledMenuItem>
+  );
 };
 
 export default MenuItem;
