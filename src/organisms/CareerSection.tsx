@@ -31,7 +31,7 @@ const CareerSection = (props: PublicSectionProps) => {
         dates="2022 - Present"
       >
         <Typography variant="p">
-          At Posit, I work as a Software Engineer for on the Enterprise
+          At Posit, I work as a Software Engineer on the Enterprise
           Workbench and IDE team.
         </Typography>
       </Job>
