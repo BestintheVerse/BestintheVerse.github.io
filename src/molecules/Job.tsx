@@ -29,7 +29,7 @@ const StyledChildrenContainer = styled.div`
 `;
 
 type JobProps = {
-  icon: string;
+  icon: string | React.ReactElement;
   title: string;
   company: string;
   dates: string;
@@ -40,7 +40,7 @@ const Job = ({ icon, title, company, dates, children }: JobProps) => {
   return (
     <StyledJob>
       <StyledHeaderContainer>
-        <StyledJobIcon src={icon} />
+        {typeof icon === "string" ? <StyledJobIcon src={icon} /> : icon}
         <StyledTitleContainer>
           <Typography variant="h4">
             <em>{title}</em>
@@ -51,9 +51,7 @@ const Job = ({ icon, title, company, dates, children }: JobProps) => {
           </Typography>
         </StyledTitleContainer>
       </StyledHeaderContainer>
-      <StyledChildrenContainer>
-      {children}
-      </StyledChildrenContainer>
+      <StyledChildrenContainer>{children}</StyledChildrenContainer>
     </StyledJob>
   );
 };

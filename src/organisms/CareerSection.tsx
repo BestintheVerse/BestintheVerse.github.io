@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ExternalLinkOutline } from "@styled-icons/evaicons-outline/ExternalLinkOutline";
 import { Section } from "../organisms";
 import { Job } from "../molecules";
-import { Typography, ButtonLink } from "../atoms";
+import { Typography, ButtonLink, PositLogo } from "../atoms";
 import garmin from "../assets/garmin-logo.png";
 import plexus from "../assets/plexus-logo.png";
 import kast from "../assets/kast-logo.png";
@@ -25,18 +25,29 @@ const CareerSection = (props: PublicSectionProps) => {
   return (
     <Section title="Career" {...props}>
       <Job
+        icon={<PositLogo />}
+        title="Senior Software Engineer"
+        company="Posit"
+        dates="2022 - Present"
+      >
+        <Typography variant="p">
+          At Posit, I work as a Software Engineer for on the Enterprise
+          Workbench and IDE team.
+        </Typography>
+      </Job>
+      <Job
         icon={garmin}
         title="Software Engineer II"
         company="Garmin"
-        dates="2021 - Present"
+        dates="2021 - 2022"
       >
         <Typography variant="p">
-          At Garmin, I work as a high-level software engineer developing the
+          At Garmin, I worked as a high-level software engineer developing the
           latest and greatest fitness products for tens of thousands of global
-          consumers. My work is primarily on mid-level and frontend
+          consumers. My work was primarily on mid-level and frontend
           functionality written in C and C++—LTE subscription management,
           location and activity tracking, and graph visualizations. I
-          collaborate closely with developers, UI/UX designers, internal and
+          collaborated closely with developers, UI/UX designers, internal and
           external testers, and project managers to create production-ready code
           that runs on thousands of devices.
         </Typography>
