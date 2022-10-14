@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Portrait, Typography, ButtonLink } from "../atoms";
+import { Portrait, Typography, ButtonLink, PositLogoHero } from "../atoms";
 // @ts-ignore
 import resume from "../assets/zach_hannum_resume.pdf";
 import { useMediaQuery } from "../hooks";
@@ -50,6 +50,7 @@ const StyledHeroContainer = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
 `;
 
@@ -105,8 +106,9 @@ const Hero = () => {
         <Typography variant="h4" color="fgSecondary" align="center">
           Software&nbsp;Engineer&nbsp;at&nbsp;
         </Typography>
+        <PositLogoHero />
         <Typography variant="h4" color="primary">
-          <strong>Garmin</strong>
+          <strong>Posit</strong>
         </Typography>
       </StyledHeroContainer>
       <StyledHeroContainer>
